@@ -415,7 +415,7 @@ local card = {}
 
 for i=1, totalnum do
   local cardFaces = testurl[i]
-  local cardAsset = Decker.Asset(cardFaces, cardBack, {width = 1, height = 1})
+  local cardAsset = Decker.Asset(cardFaces, cardBack, {width = 1, height = 1, hiddenBack = true})
   local setname = cardid[i] .. ' : ' .. cardname[i]
   card[i] = Decker.Card(cardAsset, 1, 1, {sideways = false,name = setname, desc = ''})
 end
