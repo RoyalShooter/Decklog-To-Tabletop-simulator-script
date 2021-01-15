@@ -412,10 +412,10 @@ end
 --local cardTwo = Decker.Card(cardAsset, 1, 2)
 --local cardFour = Decker.Card(cardAsset, 2, 2)
 
-for i=1, 50 do
+for i=1, totalnum do
   local cardFaces = testurl[i]
   local cardAsset = Decker.Asset(cardFaces, cardBack, {width = 1, height = 1})
-  card[i] = Decker.Card(cardAsset, 1, 1, {sideways = true,name = cardname[i], desc = ''})
+  card[i] = Decker.Card(cardAsset, 1, 1, {sideways = true,name = cardname[i]+' : '+cardid[i], desc = ''})
 end
 
 
