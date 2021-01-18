@@ -425,7 +425,9 @@ end
 
 -- define a deck of cardFour, two cardOne's and two cardTwo's
 --local myDeck = Decker.Deck({cardFour, cardOne, cardOne, cardTwo, cardTwo})
-local myDeck = Decker.Deck(card)
+
+
+local myDeck = Decker.Deck(card, {name = deckname, desc = deckdesc})
 
 
 function onLoad()
