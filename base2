@@ -427,7 +427,7 @@ end
 --local myDeck = Decker.Deck({cardFour, cardOne, cardOne, cardTwo, cardTwo})
 
 
-local myDeck = Decker.Deck(card, {name = deckname, desc = deckdesc})
+local myDeck = Decker.Deck(card , {sideways = false,name = deckname, desc = deckdesc})
 
 
 function onLoad()
