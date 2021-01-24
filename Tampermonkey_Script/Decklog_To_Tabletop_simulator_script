@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Decklog To Tabletop simulator script
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Download TCG image from Decklog and save it for use in Tabletop simulator
 // @author       Royal
 // @match        https://decklog.bushiroad.com/view/*
@@ -18,6 +18,22 @@ var t4 = "";
 var totalnum = "";
 var lua_base = "";
 var cardback = "https://www.tcgcard.tw/wp-content/uploads/2020/05/ws_cardback.png";
+var target = document.querySelector('.body-page-view');
+// create an observer instance
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        setTimeout(function() {
+//Code to run After timeout elapses
+        remove_landscape_card();
+}, 500); //Two seconds will elapse and Code will execute.
+    });
+});
+
+// configuration of the observer:
+var config = { attributes: true, childList: true, characterData: true };
+
+
+
 
 (function() {
     'use strict';
@@ -25,10 +41,10 @@ var cardback = "https://www.tcgcard.tw/wp-content/uploads/2020/05/ws_cardback.pn
     // Your code here...
 $(document).ready(function() { //When document has loaded
 
+observer.observe(target, config);
+
+
 setTimeout(function() {
-//Code to run After timeout elapses
-    remove_landscape_card();
-    setTimeout(function() {
 //Code to run After timeout elapses
     // test button
     //$(".deckview").append('<button type="button" id="Testbbt">Testbbt</button>');
@@ -38,8 +54,9 @@ setTimeout(function() {
     $(".deckview").append('<button type="button" id="getdata">Get Lua Code</button>');
     $("#getdata").click (getdata);
 
-    }, 2000);
-}, 2500); //Two seconds will elapse and Code will execute.
+
+}, 4000); //Two seconds will elapse and Code will execute.
+
 
 
 });
@@ -49,21 +66,13 @@ setTimeout(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })();
+
+
+
+
+
+
 
 function card_set (zEvent) {
     alert ("Downloading as TTS card set");
