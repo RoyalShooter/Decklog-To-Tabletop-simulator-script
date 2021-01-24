@@ -278,7 +278,7 @@ let get_lua_code = new Promise((resolve,reject) => {
 
                             GM_xmlhttpRequest({
                             method: 'GET',
-                            url: "https://raw.githubusercontent.com/RoyalShooter/Decklog-To-Tabletop-simulator-script/main/lua_base" ,
+                            url: "https://raw.githubusercontent.com/RoyalShooter/Decklog-To-Tabletop-simulator-script/main/Lua_Basecode/lua_base" ,
                             headers: {
                                 'User-agent': 'Mozilla/4.0 (compatible) Greasemonkey',
                                 'Accept': 'application/atom+xml,application/xml,text/xml',
