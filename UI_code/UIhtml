@@ -17,7 +17,7 @@
                 </div>
                 <button type="button" class="btn btn-light float-right position-sticky text-primary text-right" href="#collapseOne" data-toggle="collapse">Open Advance Menu</button>
             </div>
-            <div class="card-body collapse text-primary" id="collapseOne">
+            <div class="card-body text-primary" id="collapseOne">
                 <h5 class="card-title"><br>Advance Script Option</h5>
                 <div class="container">
                     <div class="custom-control custom-switch">
@@ -35,6 +35,10 @@
                         <label class="custom-control-label" for="formCustomSwitch122">Set Custom Cardback</label>
                     </div>
                     <input type="text" class="d-none form-control" placeholder="Placeholder text" id="scr_cardback_input">
+                </div>
+                <hr/>
+                <div class="container">
+                    <button type="button" class="btn btn-dark" id="scr_download_card_id_list">download card id list</button>
                 </div>
             </div>
         </div>
