@@ -34,7 +34,7 @@
                         <input type="checkbox" class="custom-control-input" id="formCustomSwitch122">
                         <label class="custom-control-label" for="formCustomSwitch122">Set Custom Cardback</label>
                     </div>
-                    <input type="text" class="d-none form-control" placeholder="Placeholder text" id="scr_cardback_input">
+                    <input type="text" class="d-none form-control" id="scr_cardback_input" placeholder="Input your card back image url here">
                 </div>
                 <hr/>
                 <div class="container">
