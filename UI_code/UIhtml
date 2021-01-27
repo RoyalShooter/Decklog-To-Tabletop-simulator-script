@@ -1,0 +1,42 @@
+<div class="container" id="scr_menu">
+    <div class="container">
+        <h3><div style="text-align: center;">
+                <span style="font-size: 2.00rem;">DeckLog to TableTop Simulator Script&nbsp;</span>
+                <font color="#ffffff"><span style="font-size: 21px; white-space: nowrap; background-color: rgb(108, 117, 125);"><b>2.0</b></span></font>
+            </div></h3>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary" style="font-size: 20px; margin: 5px;" id="scr_download_lua">Download Deck As TTS LUA Code</button>
+        <button type="button" class="btn btn-primary" style="font-size: 20px; margin: 5px;" id="scr_download_as_image">Download As Image</button>
+    </div>
+    <div class="container">
+        <div class="card border-primary mb-3">
+            <div class="card-header text-right">
+                <div class="d-none float-left spinner-border" role="status" id="scr_loding">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <button type="button" class="btn btn-light float-right position-sticky text-primary text-right" href="#collapseOne" data-toggle="collapse">Open Advance Menu</button>
+            </div>
+            <div class="card-body text-primary" id="collapseOne">
+                <h5 class="card-title"><br>Advance Script Option</h5>
+                <div class="container">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="formCustomSwitch116" data-pg-name="src_download_enable">
+                        <label class="custom-control-label" for="formCustomSwitch116">Download card description (Require extra runtime)</label>
+                    </div>
+                    <div class="d-none progress" id="scr_progress_bar_show">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="scr_progress_bar_value"></div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="container">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="formCustomSwitch122">
+                        <label class="custom-control-label" for="formCustomSwitch122">Set Custom Cardback</label>
+                    </div>
+                    <input type="text" class="d-none form-control" placeholder="Placeholder text" id="scr_cardback_input">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
