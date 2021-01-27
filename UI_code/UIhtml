@@ -17,7 +17,7 @@
                 </div>
                 <button type="button" class="btn btn-light float-right position-sticky text-primary text-right" href="#collapseOne" data-toggle="collapse">Open Advance Menu</button>
             </div>
-            <div class="card-body text-primary" id="collapseOne">
+            <div class="card-body collapse text-primary" id="collapseOne">
                 <h5 class="card-title"><br>Advance Script Option</h5>
                 <div class="container">
                     <div class="custom-control custom-switch">
@@ -39,4 +39,3 @@
             </div>
         </div>
     </div>
-</div>
