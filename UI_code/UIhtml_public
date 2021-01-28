@@ -39,7 +39,7 @@
                 </div>
                 <hr>
                 <div class="container">
-                    <button type="button" class="btn btn-dark" id="scr_download_card_id_list">download card id list</button>
+                    <button type="button" class="btn btn-dark" id="scr_download_card_id_list" disabled="disabled">download card id list</button>
                     <a href="https://www.patreon.com/Royal_Shooter" class="float-right"><img src="https://blog.audiosocket.com/wp-content/uploads/2020/11/patreon-creators-patreon.png" width="50" height="50" class="float-right"></a>
                     <a href="https://www.patreon.com/Royal_Shooter" class="float-right"><label class="float-right text-center text-uppercase" style="height: 57px; width: 140px;">Support me on Patreon</label></a>
                 </div>
