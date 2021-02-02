@@ -79,7 +79,7 @@ async function doruncheck() {
     //check for page finish
     var stats = $("#loader-bg").attr("style");
     //console.log(stats);
-    if (stats == "height: 852px; display: none;") {
+    if (stats.includes("none") == true) {
       await startpage();
       runcheck = false;
     }
