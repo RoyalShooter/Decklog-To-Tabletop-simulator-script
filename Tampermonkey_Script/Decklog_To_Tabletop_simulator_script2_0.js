@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Decklog To Tabletop simulator script
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Download TCG card from Decklog and import to Tabletop simulator as deck item
 // @author       Royal
 // @match        https://decklog.bushiroad.com/view/*
@@ -188,7 +188,8 @@ $("#scr_loding").removeClass("d-none");
         var name = $(this).find("img").attr("title");
         var spname = name.split(" : ");
         cardidlist.push(spname[0]);
-        cardtitlelist.push(spname[1]);
+        var escaped_name = escape_charater(spname[1])
+        cardtitlelist.push(escaped_name);
       }
     });
   //console.log("'" + urllist.join("','") + "'");
@@ -452,4 +453,12 @@ function fix_charater(data){
     //console.log(text)
     resolve(text)
   });
+}
+
+function escape_charater(data){
+    var text = data ;
+    text = text.replace('"', ' ')
+    text = text.replace("'", " ")
+
+    return(text)
 }
